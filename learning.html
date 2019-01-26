@@ -90,15 +90,40 @@
       method = what kind of HTTP request we want to make
           - get: searching, retreaving data from server (by default)
           - post: sending data to database
-
+      labels =let us add captions to indivual elements in our form
         -->
 
     <form class="" action="learning.html" method="get">  <!-- container for imputs -->
+                      <!--  -->
       <h1>Login</h1>
-      <input type="text" placeholder="Username" name="username" value="">
-      <input type="password" placeholder="Password" name="password" value="">
-      <input type="submit" name="" value="Submit">
+
+      <!-- v1 -->
+
+      <label>Username:
+        <input type="text" placeholder="Username" name="username" value="">
+      </label>
+
+      <label>Password:
+        <input type="password" placeholder="Password" name="password" value="">
+      </label>
+
+      <label>
+        <input type="submit" name="" value="Submit">
+      </label>
+      <br>
+
+      <!-- v2 -->
+
+      <label for="username">Username: </label>
+      <input id="username"type="text" placeholder="username" name="username" value="">
+      <label for="password">Password: </label>
+      <input id="password"type="text" placeholder="password" name="password"value="">
       <button type="button" name="button">Submit</button>
+
+      <!-- form validations -->
+
+
+
     </form>
 
 
